@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const History = (props) => {
+  console.log(props)
   if (props.allClicks.length === 0) {
     return (
       <div>
@@ -37,8 +38,6 @@ const App = () => {
     setAll(allClicks.concat('R'))
     setRight(right + 1)
   }
-
-  console.log(allClicks)
 
   return (
     <div>
