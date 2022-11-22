@@ -14,7 +14,8 @@ const Statistics = ({ good, neutral, bad }) => {
   // console.log(props)
 
   const all = good + neutral + bad
-  const average = (good - bad) / all
+  // const average = (good - bad) / all
+  const average = all / 3
   const positive = `${(good / all) * 100} %`
   if (all === 0) {
     return (
